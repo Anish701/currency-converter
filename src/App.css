@@ -1,0 +1,14 @@
+body {
+  -moz-transform: scale(2);
+  /* for Firefox, default 1*/
+  zoom: 200%;
+  /* For Chrome, IE, default 100%*/
+  background-color: #161616;
+  color: #ddd;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #eef;
+  text-align: center;
+}
