@@ -3,7 +3,7 @@ import CurrencyInput from './CurrencyInput';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-const api = process.env.API_KEY;
+const api = "https://api.apilayer.com/fixer/latest?base=USD&apikey=" + process.env.API_KEY;
 console.log(api);
 function App() {
 
