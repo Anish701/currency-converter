@@ -3,6 +3,8 @@ import CurrencyInput from './CurrencyInput';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
+const api = process.env.API_URL;
+
 function App() {
 
   const [amount1, setAmount1] = useState(1);
@@ -12,7 +14,7 @@ function App() {
   const [rates, setRates] = useState([]);
 
   useEffect(() => {
-    axios.get(process.env.API_URL)
+    axios.get(api)
       .then(response => {
         setRates(response.data.rates);
       })
