@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 const api = process.env.API_URL;
-
+console.log(api);
 function App() {
 
   const [amount1, setAmount1] = useState(1);
