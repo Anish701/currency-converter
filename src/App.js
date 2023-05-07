@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 const {REACT_APP_API_KEY} = process.env;
 const api = `https://api.apilayer.com/fixer/latest?base=USD&apikey=${REACT_APP_API_KEY}`;
+console.log(`${REACT_APP_API_KEY}`);
 function App() {
 
   const [amount1, setAmount1] = useState(1);
