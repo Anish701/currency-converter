@@ -3,7 +3,7 @@ import CurrencyInput from './CurrencyInput';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-const api = process.env.API_URL;
+const api = JSON.stringify(process.env.API_URL);
 console.log(api);
 function App() {
 
